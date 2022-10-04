@@ -20,6 +20,7 @@ This app was built using React, Bootstrap, Node.js, axios, express, cors, mongoo
 
 ## Change Log
 
+10-04-2022 - Application is now able to create and delete books from the database.
 10-03-2022 - Application now has a fully-functional express server, with a GET route for the location resource.
 
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
@@ -101,6 +102,30 @@ Mat
 
 ---
 ---
+## Lab 12 Estimates
+
+Name of feature: Setup Create functionality
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 1:30pm
+
+Finish time: 2:30pm
+
+Actual time needed to complete: 1 hour
+
+---
+
+Name of feature: Setup Delete functionality
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 2:30pm
+
+Finish time: 3:00pm
+
+Actual time needed to complete: 30 minutes
+
 
 ## Lab 11 Estimates
 
