@@ -34,7 +34,7 @@ class BestBooks extends React.Component {
 
 
   handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     this.handleBookCreate({
       title: event.target.title.value,
       description: event.target.description.value,
