@@ -24,7 +24,7 @@ class BookForm extends React.Component {
             <Form.Label>Book Status</Form.Label>
             <Form.Check type="checkbox" placeholder="Enter Book Status" label="Check the box if you have read this book." />
           </Form.Group>
-          <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" onClick={this.props.closeModal}>
             Add Book
           </Button>
         </Form>
