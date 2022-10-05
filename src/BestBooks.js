@@ -1,14 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Carousel, Button } from 'react-bootstrap';
+import { Container, Carousel, Button, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
-import BookForm from './BookForm';
+// import BookForm from './BookForm';
+import BookModal from './BookModal';
 
 class BestBooks extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      books: []
+      books: [],
+      showBookModal: false
     }
   }
 
@@ -65,9 +67,27 @@ class BestBooks extends React.Component {
     }
   }
 
+  // Open Book Modal
+  openModal = () => {
+    this.setState({
+      showBookModal: true
+    })
+  }
+
+  // Close Book Modal
+  closeModal = () => {
+    this.setState({
+      showBookModal: false
+    })
+  }
+
+
+
 
   componentDidMount = () => {
     this.getBooks();
+    this.openModal();
+    this.closeModal();
   }
 
 
@@ -78,10 +98,24 @@ class BestBooks extends React.Component {
 
     return (
       <>
-        <BookForm handleSubmit={this.handleSubmit} />
-
         <Container>
           <h2>My Essential Lifelong Learning &amp; Formation Shelf</h2>
+
+          <Row>
+            <Col>
+              <div className='mt-2 mb-3'>
+                <Button onClick={this.openModal}>Add a Book to the Collection</Button>
+                <BookModal
+                  state={this.state}
+                  handleSubmit={this.handleSubmit}
+                  closeModal={this.closeModal}
+                />
+              </div>
+            </Col>
+          </Row>
+
+
+
           <Carousel>
             {this.state.books.length ? (
               this.state.books.map((book, idx) => {

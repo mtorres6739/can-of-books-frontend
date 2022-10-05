@@ -22,7 +22,7 @@ class BookForm extends React.Component {
 
           <Form.Group className="mb-3" controlId="status">
             <Form.Label>Book Status</Form.Label>
-            <Form.Check type="checkbox" placeholder="Enter Book Status" />
+            <Form.Check type="checkbox" placeholder="Enter Book Status" label="Check the box if you have read this book." />
           </Form.Group>
           <Button variant="primary" type="submit">
             Add Book
