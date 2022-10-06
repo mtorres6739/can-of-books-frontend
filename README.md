@@ -20,6 +20,7 @@ This app was built using React, Bootstrap, Node.js, axios, express, cors, mongoo
 
 ## Change Log
 
+10-05-2022 - Application is now able to update books in the database.
 10-04-2022 - Application is now able to create and delete books from the database.
 10-03-2022 - Application now has a fully-functional express server, with a GET route for the location resource.
 
@@ -102,6 +103,18 @@ Mat
 
 ---
 ---
+## Lab 13 Estimates
+
+Name of feature: Setup Update functionality
+
+Estimate of time needed to complete: 3 hour
+
+Start time: 2:00pm
+
+Finish time: 8:00pm
+
+Actual time needed to complete: 6 hours
+
 ## Lab 12 Estimates
 
 Name of feature: Setup Create functionality

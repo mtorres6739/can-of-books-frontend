@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Carousel, Button, Row, Col } from "react-bootstrap";
+import { Container, Button, Row, Col } from "react-bootstrap";
 import axios from "axios";
 import BookModal from "./BookModal";
 import BookFormUpdate from "./BookFormUpdate";
@@ -35,7 +35,7 @@ class BestBooks extends React.Component {
   // Create Books
 
   handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     this.handleBookCreate({
       title: event.target.title.value,
       description: event.target.description.value,
